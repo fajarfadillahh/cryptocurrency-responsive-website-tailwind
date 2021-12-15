@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency landing page using tailwindcss</title>
+
+    <!--===== FAVICON =====-->
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/icon.png" />
+
+    <!--===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--===== TAILWIND CSS =====-->
+    <link rel="stylesheet" href="../dist/css/tailwind.css" />
+  </head>
+  <body class="font-sans mt-28 tracking-tightest">
+    <!--===== HEADER SECTION =====-->
+    <header
+      class="
+        header
+        fixed
+        w-full
+        h-28
+        top-0
+        left-0
+        bg-opacity-0
+        z-50
+        transition-all
+        duration-300
+      "
+      id="header"
+    >
+      <nav
+        class="
+          header__nav
+          container
+          mx-auto
+          h-full
+          flex
+          justify-between
+          items-center
+          px-4
+          xl:px-20
+        "
+      >
+        <a href="#" class="header__logo inline-flex items-center gap-x-3">
+          <img src="./img/icon.png" alt="" class="header__logo-icon w-7" />
+          <h3
+            class="header__logo-text text-xl font-archivo font-bold text-black"
+          >
+            Cryptocurrency.
+          </h3>
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <div
+            class="
+              header__menu-data
+              flex
+              justify-between
+              items-center
+              md:hidden
+            "
+          >
+            <a href="#" class="header__logo inline-flex items-center gap-x-3">
+              <img src="./img/icon.png" alt="" class="header__logo-icon w-7" />
+              <h3
+                class="
+                  header__logo-text
+                  text-xl
+                  font-archivo font-bold
+                  text-black
+                "
+              >
+                Cryptocurrency.
+              </h3>
+            </a>
+
+            <div
+              class="
+                header__menu-close
+                inline-flex
+                text-2xl text-black
+                cursor-pointer
+              "
+              id="header-close"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="header__menu-list flex flex-col gap-8 md:flex-row">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link text-[15px]">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link text-[15px]">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link text-[15px]">Roadmap</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link text-[15px]">Downloads</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link text-[15px]">Contact</a>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="
+              header__menu-button
+              flex
+              justify-center
+              self-end
+              py-4
+              px-7
+              bg-black
+              rounded-[.5rem]
+              font-bold
+              text-[15px] text-white
+              md:hidden
+            "
+            >Purchase Now</a
+          >
+        </div>
+
+        <div
+          class="
+            header__toggle
+            inline-flex
+            text-2xl text-black
+            cursor-pointer
+            md:hidden
+          "
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!--===== HEADER SECTION =====-->
+
+    <main class="main overflow-hidden">
+      <!--===== HOME SECTION =====-->
+      <section class="home" id="home">
+        <div
+          class="
+            home__container
+            container
+            mx-auto
+            px-4
+            grid
+            gap-12
+            mt-6
+            mb-12
+            md:grid-cols-2 md:mt-16
+            xl:px-20
+          "
+        >
+          <div class="home__data text-center md:text-left">
+            <h1
+              class="
+                home__title
+                font-archivo font-bold
+                text-primary text-[26px]
+                mb-4
+                leading-[150%]
+                md:text-[32px]
+                xl:text-[46px]
+              "
+            >
+              Welcome to next level Cryptocurrencies Token with faster transfer
+            </h1>
+            <p class="home__text font-sans text-[15px] mb-8">
+              We helps brands & agencies manage top-performing influencer
+              programs: talent discovery & qualification, relationship
+              management, automated campaign reporting, performance measurement
+              and competitive benchmarking.
+            </p>
+            <div
+              class="
+                home__buttons
+                inline-flex
+                justify-self-center
+                items-center
+                gap-x-4
+                text-[15px]
+              "
+            >
+              <a
+                href="#"
+                class="
+                  home__buttons-token
+                  inline-flex
+                  justify-center
+                  py-3
+                  px-6
+                  bg-black
+                  rounded-[.5rem]
+                  text-white
+                  font-bold
+                "
+                >Get Token</a
+              >
+              <a
+                href="#"
+                class="
+                  home__buttons-whitepaper
+                  flex
+                  items-center
+                  font-bold
+                  gap-x-2
+                "
+                >White Paper
+                <i
+                  class="
+                    bx bx-cloud-download
+                    home__buttons-icon
+                    inline-flex
+                    text-[1.5rem]
+                  "
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <img
+            src="./img/home-image.png"
+            alt=""
+            class="home__img md:self-center"
+          />
+        </div>
+      </section>
+      <!--===== HOME SECTION =====-->
+    </main>
+
+    <!--===== MAIN JS =====-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
